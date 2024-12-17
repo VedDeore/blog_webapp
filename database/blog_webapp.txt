@@ -1,0 +1,24 @@
+CREATE DATABASE db_name;
+
+use db_name;
+
+CREATE TABLE `posts` (
+  `sno` int NOT NULL AUTO_INCREMENT,
+  `title` text NOT NULL,
+  `tagline` text NOT NULL,
+  `slug` varchar(25) NOT NULL,
+  `content` text NOT NULL,
+  `img_file` varchar(12) NOT NULL,
+  `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`sno`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `contacts` (
+  `sno` int NOT NULL AUTO_INCREMENT,
+  `name` text NOT NULL,
+  `phone_num` varchar(50) NOT NULL,
+  `msg` text NOT NULL,
+  `date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `email` varchar(50) NOT NULL,
+  PRIMARY KEY (`sno`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
