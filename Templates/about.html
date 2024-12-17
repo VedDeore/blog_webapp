@@ -1,0 +1,31 @@
+{% extends "layout.html" %} {% block body %}
+<!-- Page Header-->
+<header
+  class="masthead"
+  style="background-image: url('{{ url_for('static', filename='assets/img/about-us12.jpg') }}')"
+>
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="site-heading">
+          <h1>About Us</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <p>
+        Welcome everyone to my Blog. I have used Flask, HTML, CSS, JS and
+        Bootstrap in this project.
+      </p>
+      <p>This project is created by Ved.</p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

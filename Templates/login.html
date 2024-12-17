@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Admin Login</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{{ url_for('static', filename='assets/favicon.ico') }}"
+    />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link
+      href="{{ url_for('static', filename='css/styles.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="text-center">
+    <link
+      href="{{url_for('static', filename='css/signin.css')}}"
+      rel="stylesheet"
+    />
+
+    <form class="form-signin" action="/dashboard" method="post">
+      <h1 class="h3 mb-3">Admin Login</h1>
+
+      {% if error %}
+      <p style="color: red"><strong>Error</strong>: {{error}}</p>
+      {% endif %}
+
+      <label for="uname" class="sr-only">User Name</label>
+      <input
+        type="text"
+        id="uname"
+        name="uname"
+        class="form-control"
+        placeholder="User Name"
+        required
+        autofocus
+      />
+      <label for="pass" class="sr-only">Password</label>
+      <input
+        type="password"
+        id="pass"
+        name="pass"
+        class="form-control fa-eye"
+        placeholder="Password"
+        required
+      />
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me" /> Remember me
+        </label>
+      </div>
+      <a
+        ><button
+          class="form-control btn btn-lg btn-success btn-block mb-2 text-uppercase"
+          type="submit"
+        >
+          Sign in
+        </button></a
+      >
+      <div class="nav-item">
+        <a
+          class="form-control btn btn-lg btn-primary btn-block mb-3 text-uppercase"
+          href="/"
+          >Home</a
+        >
+      </div>
+      <div class="small text-center text-muted fst-italic">Created by Ved</div>
+    </form>
+  </body>
+</html>
