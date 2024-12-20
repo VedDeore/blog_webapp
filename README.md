@@ -4,7 +4,7 @@
 
 ### Project Overview
 
-The **Blog Web Application** is a platform designed for publishing and managing blog content. It allows users to interact with blog posts, and administrators can manage the content through an intuitive dashboard. The application leverages **Flask** for backend development, while **HTML5**, **CSS3**, and **JavaScript** are used for a responsive and interactive frontend. **MySQL** is integrated to handle data storage and management efficiently.
+- The **Blog Web Application** is a platform designed for publishing and managing blog content. It allows users to interact with blog posts, and administrators can manage the content through an intuitive dashboard. The application leverages **Flask** for backend development, while **HTML5**, **CSS3**, and **JavaScript** are used for a responsive and interactive frontend. **MySQL** is integrated to handle data storage and management efficiently.
 
 ### Key Features
 
@@ -25,7 +25,7 @@ The **Blog Web Application** is a platform designed for publishing and managing 
 
 ### Conclusion
 
-The **Blog Web Application** combines backend and frontend technologies to create a seamless platform for managing and interacting with blog content. By integrating a user-friendly admin dashboard with real-time updates, the application provides a powerful tool for content management and ensures an engaging experience for users.
+- The **Blog Web Application** combines backend and frontend technologies to create a seamless platform for managing and interacting with blog content. By integrating a user-friendly admin dashboard with real-time updates, the application provides a powerful tool for content management and ensures an engaging experience for users.
 
 ## How to Run the App
 
