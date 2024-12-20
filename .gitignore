@@ -1,1 +1,10 @@
+# Ignore virtual environment
+.venv/
+venv
+
+# Ignore Python byte code
+__pycache__/
+
+# Ignore local settings
+.env
 .DS_Store
